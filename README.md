@@ -9,4 +9,4 @@ This portfolio website contains:
 6) Footer
 My portfolio website is live at: https://atharvh-git.github.io/My-Portfolio/
 
-Do visit and let me know your experience!😃
+Do visit and kindly share your experience with me through the contact form provided in the portfolio!😃
