@@ -283,7 +283,7 @@ img{
     border-radius: 0.25rem;
     font-size: larger;
     color: black;
-
+    cursor: pointer;
 }
 .skills_name:hover{
     background-color: var(--first-color);
