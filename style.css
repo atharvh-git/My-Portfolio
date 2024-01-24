@@ -288,6 +288,7 @@ img{
 .skills_name:hover{
     background-color: var(--first-color);
     color: var(--white-color);
+    cursor: pointer;
 }
 .skills_img img{
     border-radius: 0.5rem;
