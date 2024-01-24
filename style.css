@@ -471,8 +471,8 @@ img{
         row-gap: 0;
     }
     .home_img{
-        width: 518px;
-        right: 8%;
+        width: 524px;
+        right: 10%;
     }
     .about_container{
         grid-template-columns: repeat(2, 1fr);
