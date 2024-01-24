@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e4dfdf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body p {
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    color: #127cf5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mycontainer {
+    width: 100%;
+    padding: 34px 10%;
+}
+
+.mycontainer {
+    padding-right: calc(10% - 30px);
+}
+
+main.row {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.col header.title {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    color: rgb(76, 0, 255);
+    padding: 0 0 20px 30px;
+}
+
+.col .contents {
+    padding: 0px 30px;
+    border-left: 2px solid #f51212;
+}
+
+.col .contents .box {
+    position: relative;
+    cursor: pointer;
+    background-color: #ffff;
+    border: 1px solid #eaeaea;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.4s;
+}
+
+.box ul li {
+    list-style: none;
+}
+
+.col .contents .box:hover {
+    box-shadow: 0 3px 12px #292828;
+    border: 0.3px solid black;
+}
+
+.col .contents .box::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: rgb(76, 0, 255);
+    border: 2px solid white;
+}
+
+.box h4 {
+    position: relative;
+    color: rgb(76, 0, 255);
+    font-size: large;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.box h3 {
+    font-size: 18px;
+    font-family: helvetica;
+    color: #2b2a2a;
+    padding: 10px 0 5px;
+}
+
+.box ul li {
+    line-height: 1.26;
+    color: black;
+    font-size: 18px;
+    font-family: verdana;
+}
+
+.btn {
+    padding: 5px;
+    background-color: #e66161;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Verdana;
+    border: 1px solid red;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    padding: 5px;
+    background-color: #75f33b;
+    font-size: 20px;
+    color: black;
+    font-family: Verdana;
+    border: 1px solid rgb(0, 255, 13);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    main.row {
+        grid-template-columns: 1fr;
+    }
+
+    .row .col:nth-child(2) {
+        margin-top: 30px;
+    }
+}
+
+/* section, div{
+    animation: CSSscrollReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 20% ;
+}
+@keyframes CSSscrollReveal {
+    from{
+        opacity: 0.4;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
